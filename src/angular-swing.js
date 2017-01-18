@@ -34,6 +34,8 @@ var Swing = require('swing');
                 swingOnThrowout: '&',
                 swingOnThrowoutleft: '&',
                 swingOnThrowoutright: '&',
+                swingOnThrowoutup: '&',
+                swingOnThrowoutdown: '&',
                 swingOnThrowin: '&',
                 swingOnDragstart: '&',
                 swingOnDragmove: '&',
@@ -42,7 +44,7 @@ var Swing = require('swing');
             link: function (scope, element, attrs, swingStack) {
 
                 var card = swingStack.add(element[0]),
-                    events = ['throwout', 'throwoutleft', 'throwoutright', 'throwin', 'dragstart', 'dragmove', 'dragend'];
+                    events = ['throwout', 'throwoutleft', 'throwoutright', 'throwoutup', 'throwoutdown', 'throwin', 'dragstart', 'dragmove', 'dragend'];
 
                 // Map all Swing events to the scope expression.
                 // Map eventObject variable name to the expression wrapper fn.
