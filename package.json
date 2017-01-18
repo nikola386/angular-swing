@@ -35,6 +35,6 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "swing": "^3.0.2"
+    "swing": "^4.1.0"
   }
 }
