@@ -21921,7 +21921,14 @@ var Swing = require('swing');
             restrict: 'A',
             controller: /* @ngInject */ ["$scope", "$element", "$attrs", function ($scope, $element, $attrs) {
                 var stack,
-                    defaultOptions = {};
+                    defaultOptions = {
+                        allowedDirections: [
+                            Swing.Direction.default.RIGHT, 
+                            Swing.Direction.default.LEFT, 
+                            Swing.Direction.default.UP, 
+                            Swing.Direction.default.DOWN
+                        ]
+                    };
 
                 var options = $parse($attrs.swingOptions)($scope);
 
