@@ -21923,10 +21923,10 @@ var Swing = require('swing');
                 var stack,
                     defaultOptions = {
                         allowedDirections: [
-                            Swing.Direction.default.RIGHT, 
-                            Swing.Direction.default.LEFT, 
-                            Swing.Direction.default.UP, 
-                            Swing.Direction.default.DOWN
+                            Swing.Direction.RIGHT, 
+                            Swing.Direction.LEFT, 
+                            Swing.Direction.UP, 
+                            Swing.Direction.DOWN
                         ]
                     };
 
